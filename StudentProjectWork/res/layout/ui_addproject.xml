@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FAEC1"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="right" >
+
+        <TextView
+            android:textColor="@color/Black"
+            android:gravity="center"
+            android:id="@+id/Tv_Uname"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text=" UserName " />
+
+        <TextView
+            android:textColor="@color/Black"
+            android:gravity="center"
+            android:id="@+id/Tv_Logout"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Logout"
+            android:onClick="logout"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="05dp"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text=" ProjectName "
+            android:textColor="@color/Black"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/ET_prjtitle"
+            android:gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/Black"
+            android:hint="Type Your Project Name"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="05dp"
+        android:gravity="top|center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text=" Status "
+            android:textColor="@color/Black"
+            android:textSize="25sp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@color/White"
+            android:textColor="@color/Black"
+            style="@android:style/Theme.Holo.Light" />
+    </TableRow>
+
+    <TableRow
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="05dp"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text=" BeginDate: "
+            android:textColor="@color/Black"
+            android:textSize="25sp" />
+        <Button
+
+            android:id="@+id/Btn_begin"
+            android:background="@android:color/transparent"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Select Date "
+            android:textColor="@color/Black"
+            android:textSize="25sp"
+            android:onClick="begindate"/>
+
+
+
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text=" EndDate: "
+            android:textColor="@color/Black"
+            android:textSize="25sp" />
+        <Button
+
+            android:id="@+id/btn_end"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/Black"
+            android:hint="Select Date "
+            android:textSize="25sp"
+            android:onClick="enddate"/>
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="05dp"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text=" send update notification "
+            android:textColor="@color/Black"
+            android:textSize="15sp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/toggle_selector"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="05dp"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <Button
+            android:id="@+id/BTN_addtask"
+            android:onClick="addtask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint=" ADD TASK "
+           android:textColorHint="@color/White"
+            android:textColor="@color/White"
+            android:textSize="25sp" />
+
+        <ListView
+            android:id="@+id/LV_tasklist"
+            android:layout_gravity="right"
+            android:background="@color/White"
+            android:divider="@color/Black"
+            android:dividerHeight="1sp"
+            android:layout_width="350dp"
+            android:layout_marginLeft="50dp"
+            android:layout_height="match_parent" >
+        </ListView>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="05dp"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <Button
+            android:id="@+id/BT_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/Black"
+            android:padding="10dp"
+            android:text=" cancel "
+            android:onClick="cancel"
+            android:textColor="@color/White"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/BT_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/Black"
+            android:padding="10dp"
+            android:text=" submit "
+            android:onClick="submit"
+            android:textColor="@color/White"
+            android:textSize="25sp" />
+    </TableRow>
+
+
+</LinearLayout>

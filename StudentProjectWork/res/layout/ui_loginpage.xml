@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@color/White"
+        android:drawableRight="@drawable/title_image"
+        android:gravity="center"
+        android:text=" Project Process Tracker  "
+        android:textColor="@color/Green"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/ET_email"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:hint="Email"
+                android:textColor="@color/Black"
+                android:text="kevinyeb@aol.com"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/ET_Password"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:hint="Password"
+                android:text="test"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textColor="@color/Black"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/forgetUs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left"
+                    android:text="forget username"
+                    android:textColor="@color/SteelBlue"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/forgetPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="forget password"
+                    android:textColor="@color/SteelBlue"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    android:id="@+id/BTN_Signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/DeepSkyBlue"
+                    android:gravity="center"
+                    android:text=" SIGN IN "
+                    android:textColor="@color/White"
+                    android:textSize="25sp" 
+                    android:onClick="openhome"/>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/BTN_Emptyp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    
+                    android:gravity="center"
+                    android:text=" (or) "
+                    android:textColor="@color/Black"
+                    android:textSize="15sp" 
+                    />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    android:id="@+id/BTN_Register"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/DeepSkyBlue"
+                    android:gravity="center"
+                    android:text=" SIGN UP "
+                    android:textColor="@color/White"
+                    android:textSize="25sp" 
+                    android:onClick="signup"/>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FAEC1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:padding="02dp"
+                    android:id="@+id/BT_Project"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/projectround_copy"
+                    android:hint="  PROJECTS "
+                    android:onClick="project"
+                    android:textColor="@color/White"
+                    android:textColorHint="@color/White"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:padding="02dp"
+                android:id="@+id/BTN_notStart"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/notstarted_copy"
+                android:hint="  NOT STARTED  "
+                android:onClick="notstarted"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White"
+                android:textSize="15sp" />
+
+            <Button
+                android:padding="02dp"
+                android:id="@+id/BTN_inProgress"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignLeft="@+id/button1"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/inprogress"
+                android:hint="  IN PROGRESS  "
+                android:onClick="inprogress"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White" />
+
+            <Button
+                android:padding="02dp"
+                android:id="@+id/BTN_complete"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignLeft="@+id/button1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/completed_copy"
+                android:hint="  COMPLETED  "
+                android:onClick="complete"
+                android:textColorHint="@color/White" />
+
+            <Button
+                android:padding="02dp"
+                android:id="@+id/BTN_abn"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignLeft="@+id/button1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/abandoned"
+                android:hint="  ABANDONTED  "
+                android:onClick="abn"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:padding="02dp"
+                    android:id="@+id/button1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/tasks"
+                    android:hint="  TASK  "
+                     android:onClick="task"
+                    android:textColor="@color/White"
+                    android:textColorHint="@color/White"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

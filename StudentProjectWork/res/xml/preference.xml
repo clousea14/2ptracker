@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+<PreferenceCategory
+    android:summary="Server information"
+    android:title="Server information  (Information will be updated on Next app launch)" >
+    <EditTextPreference
+        android:key="ServerName"
+        android:summary="Please enter your login username"
+        android:title="Server Name" />
+    <EditTextPreference
+        android:key="DbName"
+        android:summary="Please enter your login username"
+        android:title="Db Name" />
+    <EditTextPreference
+        android:key="UserName"
+        android:summary="Db UserName"
+        android:title="UserName " />
+    <EditTextPreference
+        android:key="Password"
+        android:summary="Db Password"
+        android:title="Password" />
+</PreferenceCategory>
+
+</PreferenceScreen>

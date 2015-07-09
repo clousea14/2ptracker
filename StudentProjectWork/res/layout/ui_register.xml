@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@color/White"
+        android:drawableRight="@drawable/title_image"
+        android:gravity="center"
+        android:text=" Project Process Tracker  "
+        android:textColor="@color/Green"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <EditText
+                android:textColor="@color/Black"
+                android:id="@+id/ET_firstName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:hint="First Name"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <EditText
+                android:textColor="@color/Black"
+                android:id="@+id/ET_lastName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:hint="Last Name"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <EditText
+                android:textColor="@color/Black"
+                android:id="@+id/ET_RegEmail"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:hint="email"
+
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <EditText
+                android:textColor="@color/Black"
+                android:id="@+id/ET_RegPassword"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    
+                    android:id="@+id/BTN_Reg_Register"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/DeepSkyBlue"
+                    android:gravity="center"
+                    android:text=" REGISTER "
+                    android:textColor="@color/White"
+                    android:textSize="25sp" 
+                    android:onClick="newRegister"/>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

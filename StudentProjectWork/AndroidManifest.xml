@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.studentprojectwork"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:screenOrientation="landscape"
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name" >
+        <activity android:name=".Co_LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Co_PrefsActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity android:name=".Co_ProjectIndex" >
+        </activity>
+        <activity android:name=".Co_ProjectViewPage" >
+        </activity>
+        <activity android:name=".Co_ProjectEditPage" >
+        </activity>
+        <activity android:name=".Co_NewRegister" >
+        </activity>
+        <activity android:name=".Co_AddProject" >
+        </activity>
+    </application>
+
+</manifest>
